@@ -1,0 +1,71 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22-may-2020, 16:24:35
+    Author     : Marcos
+*/
+
+form {
+    overflow: hidden;
+}
+
+label {
+    float: left;
+    width: 150px;
+    padding-right: 24px;
+    margin-bottom: 5px;
+}
+
+input {
+    float: left;
+    width: calc(100% - 150px);
+    margin-bottom: 5px;
+}
+
+select {
+    float: left;
+    width: calc(100% - 150px);
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+button {
+    float: right;
+    width: calc(100% - 150px);
+}
+
+@media (min-width: 800px){
+    form {
+        overflow: hidden;
+        width: 500px;
+    }
+
+    label {
+        float: left;
+        width: 200px;
+        padding-right: 24px;
+        margin-bottom: 5px;
+    }
+
+    input {
+        float: left;
+        width: calc(100% - 200px);
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    select {
+        float: left;
+        width: calc(100% - 200px);
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    button {
+        float: right;
+        width: calc(100% - 200px);
+    }
+}

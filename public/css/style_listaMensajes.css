@@ -1,0 +1,129 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-abr-2020, 18:44:19
+    Author     : Marcos
+*/
+#cabecera h2{
+    display: inline;
+}
+
+#enlace{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    margin: 20px 10px 20px 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ffc1000;
+    color: black;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 2px 25px rgba(255, 153, 0, 0.9);
+    text-align: center;
+    width: 50%;
+}
+
+#lista{
+    border: 1px solid black; 
+    padding: 5px; 
+    margin-top: 5px; 
+    background-color: white; 
+    width: 100%;
+}
+
+#lista-no{
+    border: 1px solid black; 
+    padding: 5px; 
+    margin-top: 5px; 
+    background-color: activecaption; 
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color : black;
+}
+
+#mensaje{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    margin-top: 20px;
+    width: 75%;
+}
+
+#mensaje a{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    margin: 20px 10px 20px 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ffc1000;
+    color: black;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 2px 25px rgba(255, 153, 0, 0.9);
+    text-align: center;
+    width: 50%;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 800px){
+
+    #cabecera{
+        margin-top: 75px;
+        width: 100%;
+    }
+    
+    #enlace{
+        font-size: x-small;
+        width: 100%;
+    }
+
+    #mensaje{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #mensaje a{
+        font-family: 'Helvetica', 'Arial', sans-serif;
+        font-size: 1em;
+        padding: 10px;
+        margin: 20px 10px 20px 10px;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #ffc1000;
+        color: black;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 0 2px 25px rgba(255, 153, 0, 0.9);
+        text-align: center;
+        width: 50%;
+        font-size: x-small;
+    }
+    
+    section a{
+        font-size: x-small;
+    }
+}

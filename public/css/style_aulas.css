@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31-mar-2020, 13:32:00
+    Author     : Marcos
+*/
+
+#aula{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+section{
+    display: grid;
+    justify-content: center;
+}
+
+section h2{
+    text-align: center;
+}
+section img{
+    width: 300px;
+    height: 300px;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.75));
+}
+
+section img:hover{
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+section a{
+    color: black;
+    text-decoration: none;
+    box-shadow: none;
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*section a{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgb(60, 124, 96);
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 2px 25px rgba(14, 233, 87, 0.5);
+    text-align: center;
+    text-decoration: none;
+}*/
+
+@media (max-width: 800px){
+
+    #aula{
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+    }
+
+    section img{
+        width: 150px;
+        height: 150px;
+    }
+}
