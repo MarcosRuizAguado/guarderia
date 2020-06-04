@@ -3,7 +3,7 @@
 <h2 id="titulo">Menú</h2>
 
 <form action="{{ url('menu/verMenu') }}" method="POST">
-    <label for="fecha">Introduce una fecha :</label>
+    <label for="fecha">Introduce una fecha:</label>
     <input type="date" id="fecha" name="fecha">
     <br>
     <button type="submit">Obtener menú</button>

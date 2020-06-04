@@ -2,7 +2,7 @@
 <h2>Eliminar menú</h2>
 
 <form action="{{ url('menu/formMenuEliminar') }}" method="POST">
-    <label for="fecha">Introduce una fecha :</label>
+    <label for="fecha">Introduce una fecha:</label>
     <input type="date" id="fecha" name="fecha">
     <br>
     <button type="submit">Obtener menú</button>

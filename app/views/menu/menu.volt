@@ -2,7 +2,7 @@
 {% if session.has("rol") == 'admin' %}
     <h2>Administracion de menús</h2>
 {%else%}
-    <h2>Menús</h2>
+    <h2>Menú</h2>
 {% endif %}
 <nav>
     {% if session.has("rol") == 'admin' %}

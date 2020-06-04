@@ -3,14 +3,14 @@
 <?php echo "<script src='../js/es.js'></script>"; ?>
 <?php echo $this->tag->stylesheetLink("css/parsley.css"); ?>
 <?php echo $this->tag->stylesheetLink("css/style_formRegistroFicha.css"); ?>
-<h2>Añade el menú del {{dia}}, {{fecha}}</h2>
+<h2>Añade el menú del <?= $dia ?>, <?= $fecha ?></h2>
 
 <br>
 
-{%if menu is empty%}
-    <form action="{{ url('menu/addMenuFicha') }}" method="POST" data-parsley-validate>
+<?php if (empty($menu)) { ?>
+    <form action="<?= $this->url->get('menu/addMenuFicha') ?>" method="POST" data-parsley-validate>
         <label for="fecha_add">Fecha :</label>
-        <input type="date" id="fecha_add" name="fecha_add" value="{{fecha}}" readonly>
+        <input type="date" id="fecha_add" name="fecha_add" value="<?= $fecha ?>" readonly>
         <br>
 
         <label for="comida_primero">Primer plato :</label>
@@ -31,18 +31,18 @@
         <br>
 
         <button type="submit">Añadir menú</button>
-        <a href="{{ url('menu/menu') }}">Cancelar</a>
+        <a href="<?= $this->url->get('menu/menu') ?>">Cancelar</a>
     </form>
-{%endif%}
+<?php } ?>
 
 <div id="error">
-    {%if not(error is empty)%}
-        {{error}}
-    {%endif%}
+    <?php if (!(empty($error))) { ?>
+        <?= $error ?>
+    <?php } ?>
 </div>
 
 <div id="succes">
-    {%if not(succes is empty)%}
-        {{succes}}
-    {%endif%}
+    <?php if (!(empty($succes))) { ?>
+        <?= $succes ?>
+    <?php } ?>
 </div>

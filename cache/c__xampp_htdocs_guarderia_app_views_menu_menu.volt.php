@@ -2,7 +2,7 @@
 <?php if ($this->session->has('rol') == 'admin') { ?>
     <h2>Administracion de menús</h2>
 <?php } else { ?>
-    <h2>Menús</h2>
+    <h2>Menú</h2>
 <?php } ?>
 <nav>
     <?php if ($this->session->has('rol') == 'admin') { ?>

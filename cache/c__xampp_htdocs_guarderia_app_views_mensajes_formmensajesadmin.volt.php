@@ -4,7 +4,7 @@
 <?php echo $this->tag->stylesheetLink("css/parsley.css"); ?>
 <?php echo $this->tag->stylesheetLink("css/style_formUpdatePerfil.css"); ?>
 <h2>Nuevo mensaje</h2>
-<form action="{{url('mensajes/enviarMensajeAdmin')}}" method="POST" data-parsley-validate>
+<form action="<?= $this->url->get('mensajes/enviarMensajeAdmin') ?>" method="POST" data-parsley-validate>
     <div>
         <label for="titulo">Titulo :</label>
         <input type="text" id="titulo" name="titulo" placeholder="Titulo" data-parsley-required>
@@ -24,18 +24,18 @@
 
     <div>
         <button type="submit">Enviar mensaje</button>
-        <a href="{{ url('mensajes/listaMensajes') }}">Cancelar</a>
+        <a href="<?= $this->url->get('mensajes/listaMensajes') ?>">Cancelar</a>
     </div>
 
 </form>
 
 <div id="error">
-    {%if not(error is empty)%}
-        {{error}}
-    {%endif%}
+    <?php if (!(empty($error))) { ?>
+        <?= $error ?>
+    <?php } ?>
 </div>
 <div id="succes">
-    {%if not(succes is empty)%}
-        {{succes}}
-    {%endif%}
+    <?php if (!(empty($succes))) { ?>
+        <?= $succes ?>
+    <?php } ?>
 </div>

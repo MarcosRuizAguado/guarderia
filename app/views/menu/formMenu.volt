@@ -6,7 +6,7 @@
 <h2>Añade o modifica el menú</h2>
 
 <form action="{{ url('menu/formMenu') }}" method="POST" data-parsley-validate>
-    <label for="fecha">Introduce una fecha :</label>
+    <label for="fecha">Introduce una fecha:</label>
     <input type="date" id="fecha" name="fecha" id="fecha" data-parsley-required>
     <br>
     <button type="submit">Obtener menú</button>
