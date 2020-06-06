@@ -4,7 +4,7 @@
 
 <form action="{{ url('menu/verMenu') }}" method="POST">
     <label for="fecha">Introduce una fecha:</label>
-    <input type="date" id="fecha" name="fecha">
+    <input type="date" id="fecha" name="fecha"  value="<?php echo date('Y-m-d');?>">
     <br>
     <button type="submit">Obtener menú</button>
 </form>

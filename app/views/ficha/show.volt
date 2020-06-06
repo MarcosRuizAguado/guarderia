@@ -3,7 +3,7 @@
 
 <form action="{{ url('ficha/show') }}" method="POST">
     <label for="fecha">Fecha :</label>
-    <input type="date" id="fecha" name="fecha">
+    <input type="date" id="fecha" name="fecha" value="<?php echo date('Y-m-d');?>">
     <br>
     <button type="submit" id="enviar" name="enviar">Ver ficha del alumno</button>
 </form>
